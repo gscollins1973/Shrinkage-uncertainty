@@ -83,6 +83,7 @@ cal.slope.fit.val.elasticnet <- matrix(ncol = length(N), nrow = B)
 cal.slope.fit.val.lasso      <- matrix(ncol = length(N), nrow = B)
 
 ML.converged      <- matrix(ncol = length(N), nrow = B)
+betas.ML <- array(dim = c(B, n.true.predictors + n.noise.predictors + 1, length(N)))
 
 registerDoMC(cores = 4)
 set.seed(12412)
