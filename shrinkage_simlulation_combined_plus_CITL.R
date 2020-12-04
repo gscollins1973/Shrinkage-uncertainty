@@ -536,8 +536,7 @@ p2 <- ggplot(OUT2, aes(y = value, x = factor(key), fill = method)) +
   theme(axis.text = element_text(size = 8)) +
   guides(colour = guide_legend(override.aes = list(alpha = 1)))
 
-#setwd('/Users/garycollins/Downloads/')
-setwd('/Users/collinsg/Downloads/')
+
 p1/p2
 ggsave("Figure_3.jpg", width = 6, height = 8)
 
